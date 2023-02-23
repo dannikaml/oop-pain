@@ -33,3 +33,20 @@ THEN I exit the application, and the HTML is generated
 
 stackoverflow: 
 - https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
+
+Youtube:
+- https://www.youtube.com/watch?v=IMJFw1ZY-L4
+
+w3schools:
+- https://www.w3schools.com/css/css_icons.asp
+- https://www.w3schools.com/css/tryit.asp?filename=trycss_icons_google
+
+bootstrap:
+- https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+mdn:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor
+- https://developer.mozilla.org/en-US/docs/Glossary/Constructor
+
+sources/references:
+Instructor: Bassie; TA - Ethan; Tutor: Ashlae; github reference: https://github.com/nicolewallace09/team-profile-generator

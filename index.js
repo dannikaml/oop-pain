@@ -1,7 +1,7 @@
-// link to page creation
+// connects the generate page 
 const generateHTML = require('./src/generateHTML');
 
-// team profiles
+// connects the manager/employee
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
@@ -13,15 +13,15 @@ const inquirer = require('inquirer');
 // team array
 const teamMembers = []; 
 
-// start of manager prompts 
+// manager prompts 
 const managerInput = () => {
     return inquirer.prompt ([
         {
             type: 'input',
             name: 'name',
             message: 'What is the Managers first and last name?', 
-            validate: nameInput => {
-                if (nameInput) {
+            validate: numberInput => {
+                if (numberInput) {
                     return true;
                 } else {
                     console.log ("Enter Managers Name...");
@@ -30,11 +30,12 @@ const managerInput = () => {
             }
         },
         {
+            //has to be a number input or will return 
             type: 'input',
             name: 'id',
             message: "What is the manager's ID: ",
-            validate: nameInput => {
-                if  (isNaN(nameInput)) {
+            validate: numberInput => {
+                if  (isNaN(numberInput)) {
                     console.log ("Enter Manager's ID...")
                     return false; 
                 } else {
@@ -60,8 +61,8 @@ const managerInput = () => {
             type: 'input',
             name: 'officeNumber',
             message: "What is the manager's office number",
-            validate: nameInput => {
-                if  (isNaN(nameInput)) {
+            validate: numberInput => {
+                if  (isNaN(numberInput)) {
                     console.log ('Enter office number...')
                     return false; 
                 } else {
@@ -71,7 +72,7 @@ const managerInput = () => {
         }
     ])
     .then(managerInput => {
-        const  { name, id, email, officeNumber } = managerInput; 
+        let  { name, id, email, officeNumber } = managerInput; 
         const manager = new Manager (name, id, email, officeNumber);
 
         teamMembers.push(manager); 
@@ -79,6 +80,7 @@ const managerInput = () => {
     })
 };
 
+// employee prompts
 const addEmployee = () => {
     console.log(`Adding employees to html`);
 
@@ -93,8 +95,8 @@ const addEmployee = () => {
             type: 'input',
             name: 'name',
             message: "Employees full name?", 
-            validate: nameInput => {
-                if (nameInput) {
+            validate: numberInput => {
+                if (numberInput) {
                     return true;
                 } else {
                     console.log ("Enter Employees name...");
@@ -106,8 +108,8 @@ const addEmployee = () => {
             type: 'input',
             name: 'id',
             message: "What is the Employees ID:",
-            validate: nameInput => {
-                if  (isNaN(nameInput)) {
+            validate: numberInput => {
+                if  (isNaN(numberInput)) {
                     console.log ("Enter Employees ID...")
                     return false; 
                 } else {
@@ -134,8 +136,8 @@ const addEmployee = () => {
             name: 'github',
             message: "What is the Employees GitHub username: ",
             when: (input) => input.job === "Engineer",
-            validate: nameInput => {
-                if (nameInput ) {
+            validate: numberInput => {
+                if (numberInput ) {
                     return true;
                 } else {
                     console.log ("Enter Employees GitHub username: ")
@@ -147,8 +149,8 @@ const addEmployee = () => {
             name: 'school',
             message: "Enter the intern's school name: ",
             when: (input) => input.job === "Intern",
-            validate: nameInput => {
-                if (nameInput) {
+            validate: numberInput => {
+                if (numberInput) {
                     return true;
                 } else {
                     console.log ("Enter school name: ")
@@ -163,8 +165,8 @@ const addEmployee = () => {
         }
     ])
     .then(employeeData => {
-        // data for employee types 
 
+        // employee input data 
         let { name, id, email, job, github, school, confirmAddEmployee } = employeeData; 
         let employee; 
 
