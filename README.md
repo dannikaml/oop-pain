@@ -33,9 +33,12 @@ THEN I exit the application, and the HTML is generated
 
 stackoverflow: 
 - https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
+- https://stackoverflow.com/questions/49854811/class-extends-value-object-is-not-a-constructor-or-null
+- https://stackoverflow.com/questions/59723177/uncaught-typeerror-class-extends-value-object-is-not-a-constructor-or-null
 
 Youtube:
 - https://www.youtube.com/watch?v=IMJFw1ZY-L4
+- https://www.youtube.com/watch?v=bhHa6AL4aBo
 
 w3schools:
 - https://www.w3schools.com/css/css_icons.asp
@@ -44,9 +47,15 @@ w3schools:
 bootstrap:
 - https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
+github:
+- https://github.com/nicolewallace09/team-profile-generator
+
 mdn:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor
 - https://developer.mozilla.org/en-US/docs/Glossary/Constructor
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class
 
 sources/references:
-Instructor: Bassie; TA - Ethan; Tutor: Ashlae; github reference: https://github.com/nicolewallace09/team-profile-generator
+Instructor: Bassie; TA - Ethan; Tutor - Ashlae
