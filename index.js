@@ -86,8 +86,8 @@ const addEmployee = () => {
     return inquirer.prompt ([
         {
             type: 'list',
-            name: 'job',
-            message: "Please select the employees job title: ",
+            name: 'role',
+            message: "Please select the employees role title: ",
             choices: ['Engineer', 'Intern']
         },
         {
@@ -134,7 +134,7 @@ const addEmployee = () => {
             type: 'input',
             name: 'github',
             message: "What is the Employees GitHub username: ",
-            when: (input) => input.job === "Engineer",
+            when: (input) => input.role === "Engineer",
             validate: answer => {
                 if (answer ) {
                     return true;
@@ -147,7 +147,7 @@ const addEmployee = () => {
             type: 'input',
             name: 'school',
             message: "Enter the intern's school name: ",
-            when: (input) => input.job === "Intern",
+            when: (input) => input.role === "Intern",
             validate: answer => {
                 if (answer) {
                     return true;
@@ -166,15 +166,15 @@ const addEmployee = () => {
     .then(employeeData => {
 
         // employee input data 
-        let { name, id, email, job, github, school, confirmAddEmployee } = employeeData; 
+        let { name, id, email, role, github, school, confirmAddEmployee } = employeeData; 
         let employee; 
 
-        if (job === "Engineer") {
+        if (role === "Engineer") {
             employee = new Engineer (name, id, email, github);
 
             console.log(employee);
 
-        } else if (job === "Intern") {
+        } else if (role === "Intern") {
             employee = new Intern (name, id, email, school);
 
             console.log(employee);
