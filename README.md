@@ -55,8 +55,12 @@ THEN I exit the application, and the HTML is generated
 ## Link to walk-through video
 https://drive.google.com/file/d/1UNWS7UmJKh55lmi4pI7GbYFxCGCQs9yB/view
 
-
-![screenshot]()
+***
+### Node & Jest from the Terminal... 
+![screenshot](./assets/Screenshot%202023-03-04%20130145.png)
+***
+### Sample HTML generated from application...
+![screenshot](./assets/Screenshot%202023-03-04%20131205.png)
 
 ***
 
