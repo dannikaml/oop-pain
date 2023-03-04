@@ -1,4 +1,28 @@
-# oop-pain
+# Team Profile Generator
+
+## Description
+***
+Using a command-line application to generate/create an index.html file that will catalog Employee info by utilizing Inquirer 8.2.4 by Node.js and can be tested by utilizing Jest. 
+ 
+
+## Usage
+***
+By utilizing Node.js we can create a command-line application that dynamically generates an HTML file from a user's input using the Inquirer package.
+
+To install inquirer, please use:
+
+```
+npm i inquirer@8.2.4
+```
+
+The application will be invoked by using the following command:
+```
+node index.js
+```
+To run tests use the following command:
+```
+npm test
+```
 
 
 ### User Story
@@ -27,6 +51,14 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
+***
+## Link to walk-through video
+
+
+
+![screenshot]()
+
+***
 
 
 ### Sources
@@ -62,4 +94,4 @@ jest:
 - https://jestjs.io/docs/getting-started
 
 sources/references:
-Instructor: Bassie; TA - Ethan; Tutor - Ashlae
+- Instructor: Bassie; TA - Ethan; Tutor - Ashlae
