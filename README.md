@@ -72,10 +72,12 @@ Youtube:
 - https://www.youtube.com/watch?v=IMJFw1ZY-L4
 - https://www.youtube.com/watch?v=bhHa6AL4aBo
 - https://www.youtube.com/watch?v=KqQoiFBp36A
+- https://www.youtube.com/watch?v=31LhQkLcZvE&t=6s
 
 w3schools:
 - https://www.w3schools.com/css/css_icons.asp
 - https://www.w3schools.com/css/tryit.asp?filename=trycss_icons_google
+- https://www.w3schools.com/jsref/jsref_tostring_string.asp#:~:text=The%20toString()%20method%20is,it%20in%20your%20own%20code.
 
 bootstrap:
 - https://getbootstrap.com/docs/5.3/getting-started/introduction/
