@@ -53,7 +53,7 @@ THEN I exit the application, and the HTML is generated
 ```
 ***
 ## Link to walk-through video
-
+https://drive.google.com/file/d/1UNWS7UmJKh55lmi4pI7GbYFxCGCQs9yB/view
 
 
 ![screenshot]()
@@ -94,6 +94,9 @@ mdn:
 
 jest:
 - https://jestjs.io/docs/getting-started
+
+techblog.topdesk:
+- https://techblog.topdesk.com/coding/frontend-testing-with-jest-assertions-deep-dive/#:~:text=toBe%20compares%20the%20referential%20identity,object%20is%20the%20same%20instance. (.toBe vs .toEqual -jest)
 
 sources/references:
 - Instructor: Bassie; TA - Ethan; Tutor - Ashlae
