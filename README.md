@@ -57,5 +57,8 @@ mdn:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class
 
+jest:
+- https://jestjs.io/docs/getting-started
+
 sources/references:
 Instructor: Bassie; TA - Ethan; Tutor - Ashlae
